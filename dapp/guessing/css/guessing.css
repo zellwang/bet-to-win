@@ -1,0 +1,343 @@
+html,body{
+    background: -webkit-gradient(linear, 0 bottom, right bottom, from(#96091a), to(#E80F0C));
+    color: #fff;
+}  
+.primary-color{
+    color:#96091a;
+}
+.page{
+    max-width: 640px;
+    margin: 0 auto;
+    position: relative;
+}
+.container{
+    max-width: 640px !important;
+}
+.header{
+    height: 200px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 640px;
+}
+.header-line{
+    height: 200px;
+}
+.header .logo{
+    margin: 0;
+    position: relative;
+}
+.header .logo .h1{
+    font-size: 36px;
+    margin: 0;
+    margin-top: 100px;
+    line-height: 100px;
+}
+.header .logo .main-title{
+    padding-left: 8px;
+}
+.header.small-header{
+    height: 50px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.small-header-line{
+    height: 50px;
+}
+.header.small-header .logo .h1{
+    font-size: 24px;
+    margin: 0;
+    margin-top: 0px;
+    line-height: 50px;
+    padding: 0 50px;
+}
+.header .logo .main-title{
+    padding-left: 8px;
+}
+.footer{
+    height: 40px;
+    line-height: 40px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 640px;
+}
+/* 重载Boostrap*/
+.btn-primary{
+    background-color: #1890ff;
+    border-color: #1890ff;
+}
+.btn-primary:focus, .btn-primary:hover {
+    background-color: #40a9ff;
+    border-color: #40a9ff;
+}
+.btn-primary.active, .btn-primary:active {
+    color: #fff;
+    background-color: #096dd9;
+    border-color: #096dd9;
+}
+/* common css*/
+.loading-wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    display: none;
+}
+.loading-wrap.show{
+    display: block;
+}
+#circle{
+    width: 100px;
+    height: 100px;
+    border: 5px white solid;
+    border-left-color: #1890ff;
+    border-right-color: #fff;
+    border-radius: 100%;
+    animation: loading1 1s infinite linear;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -50px;
+    margin-top: -50px;
+}
+@keyframes loading1{
+    from{transform: rotate(0deg)}to{transform: rotate(360deg)}
+}
+/* logo */
+.logo{
+    margin: 40% auto 10% auto;
+}
+.logo .back{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    z-index: 1000;
+}
+.logo .back .fa{
+    font-size: 32px; 
+    margin-top: 8px;
+}
+.logo .h1{
+    font-size: 48px;
+    text-align: center;
+}
+.logo .fa{
+    color: #fff;
+}
+.logo .main-title{
+    display: inline-block;
+    padding-left: 15px;
+    color: #fff;
+}
+/* 加载中... */
+#ddr{
+    margin: 0 auto;
+    width: 74px;
+    height: 60px;
+}
+.ddr{
+    width: 4px;
+    height: 60px;
+    float: left;
+    margin: 2px 4px;
+    background-color: #fff;
+    animation: loading 1s infinite ease-in-out;
+}
+.ddr2{
+    animation-delay: -0.9s;
+}
+.ddr3{
+    animation-delay: -0.8s;
+}
+.ddr4{
+    animation-delay: -0.7s;
+}
+.ddr5{
+    animation-delay: -0.6s;
+}
+.ddr6{
+    animation-delay: -0.5s;
+}
+@keyframes loading {
+    0%,40%,100%{ 
+        -webkit-transform: scaleY(0.5);
+    }
+    20%{
+        -webkit-transform: scaleY(1);
+    }
+}
+
+/* index page*/
+.index-page .logo{
+    margin-top: 50%;
+}
+.logos{
+    margin: 20px;
+    text-align: center;
+}
+.introduction{
+    padding: 0;
+    margin: 40px 20px;
+    text-align: center;
+}
+/*可使用css制作成一直转圈的效果*/
+.logos .fas{
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    position: relative;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    display: none;
+}
+
+.logos .fas .first{
+    position: absolute;
+    top: 6px;
+    left: 36px;
+}
+.logos .fas .second{
+    position: absolute;
+    top: 56px;
+    left: 14px;
+}
+.logos .fas .three{
+    position: absolute;
+    top: 56px;
+    left: 60px;
+}
+.logos .fas .fa{
+    font-size: 40px;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+}
+
+/* login page */
+.login-form{
+    margin: 20px;
+}
+.login-form .form-group a{
+    color: #fff;
+}
+.form-tip .fa-warning{
+    margin-right: 8px;
+}
+
+/* register page*/
+.register-form{
+    margin: 20px;
+}
+.register-form .form-group a{
+    color: #fff;
+}
+
+/* home page*/
+.content{
+    margin: 50px auto;
+}
+.content .section{
+    margin: 0 20px 30px 20px;
+    border: 1px solid #f1f1f1;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+}
+.content .section a,
+.content .section a:hover{
+    text-decoration: none;
+}
+.content .section .thumb{
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+}
+.content .section .thumb.no-border{
+    border: none;
+}
+.content .section .thumb .fa{
+    float: left;
+    font-size: 36px;
+    color: #fff;
+}
+.content .section .thumb .fa.fa-angellist{
+    font-size: 28px;
+    margin-left: 5px;
+    margin-top: 3px;
+}
+.content .section .main .title{
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+.content .section .main .sub-title{
+    color: #fff;
+}
+
+/* my guessing */
+.my-content{
+    margin: 20px;
+}
+.my-content .section{
+    background: #fff;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 10px;
+    color: #96091a;
+}
+.my-content .section .title {
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    padding: 2px 4px; 
+    margin: 0 -4px;
+}
+.my-content .section .title .fa{
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+.my-content .section .main .line{
+    margin: 4px 0;
+}
+
+/* game page */
+.game-content{
+    margin: 25% 20px;
+}
+.game-content .section{
+    background: #fff;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 10px;
+    color: #96091a;
+    height: 100px;
+}
+.game-content .section .input-group{
+    margin: 23px auto;
+}
+.game-content .section .title {
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    padding: 2px 4px; 
+    margin: 0 -4px;
+}
+.game-content .section .title .fa{
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+.game-content .section .main .line{
+    margin: 4px 0;
+}
+.game-content .section-vs{
+    margin: 30px 0;
+    text-align: center;
+}

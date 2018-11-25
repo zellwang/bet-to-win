@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Guessing - Home</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/guessing.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="page home-page" id="page">
+        <div class="header header-fixed">
+            <div class="logo">
+                <div class="container">
+                    <div class="h1" id="logo"><a href="home.html"><i class="fa fa-angellist"></i><span class="main-title">Guessing</span></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="header-line"></div>
+        <div class="content">
+            <div class="section">
+                <a href="guessing.html">
+                    <div class="thumb">
+                        <i class="fa fa-angellist"></i>
+                    </div>
+                    <div class="main">
+                        <div class="title">快速对战</div>
+                        <div class="sub-title">石头、剪刀、布，5局3胜！</div>
+                    </div>
+                </a>
+            </div>
+            <div class="section">
+                <a href="myguessing.html">
+                    <div class="thumb no-border">
+                        <i class="fa fa-user-circle"></i>
+                    </div>
+                    <div class="main">
+                        <div class="title">我的对战</div>
+                        <div class="sub-title">已玩<span class="num1">10</span>局，赢<span class="num2">8</span>局！</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <div class="text-center">Copyright © 2018 XXXXXXXXX</div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/guessing.js"></script>
+    <script>
+        $(function () {
+            homeController();
+        }); 
+    </script>
+</body>
+
+</html>

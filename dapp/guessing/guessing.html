@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Guessing - Guessing</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/guessing.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="page myguessing-page" id="page">
+        <div class="header header-fixed small-header">
+            <div class="logo">
+                <div class="container">
+                    <!--<div class="h1" id="logo"><a href="guessing.html"><i class="fa fa-angellist"></i><span class="main-title">Bet to win</span></a></div>-->
+					<div class="h1" id="logo"><i class="fa fa-angellist"></i><span class="main-title">Welcome,</span><span class="title-name"></span></div>
+                </div>
+            </div>
+        </div>
+        <div class="header-line small-header-line"></div>
+        <div class="game-content">
+            <div class="section">
+                <div class="input-group">
+                    <input type="text" class="form-control input-num" placeholder="Input the bet amount">
+                    <span class="input-group-btn">
+                        <button class="btn btn-primary btn-token" type="button">投注！</button>
+                    </span>
+                </div>
+            </div>
+            <div class="section-vs">
+			    <div class="title"><span class="user-name"></span> 你投注了：<span class="bet-num">0</span> token</div>
+                <div class="title">你的对手投注了：<span class="opponent-num">0</span> token</div>
+            </div>
+            <div class="section">
+                <div class="title">
+                    <!--<i class="fa fa-calendar"></i>结算时间 2018-11-24 15:23  -->
+                </div>
+                <div class="main">
+                    <div class="line clearfix">
+                        <div class="pull-left">获胜者</div>
+                        <div class="pull-right winner"></div>
+                    </div>
+                    <div class="line clearfix">
+                        <div class="pull-left">本场收益</div>
+                        <div class="pull-right win-amount">0</div>
+                    </div>
+					<div class="line clearfix">
+                        <div class="pull-left">余额</div>
+                        <div class="pull-right total-amount">10000</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <!-- <div class="text-center">Copyright © 2018 XXXXXXXXX</div> -->
+            </div>
+        </div>
+    </div>
+    <div class="loading-wrap">
+        <div id="circle"></div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/bottos-sdk-js.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/guessing.js"></script>
+    <script>
+        $(function () {
+            guessingController();
+        }); 
+    </script>
+</body>
+
+</html>

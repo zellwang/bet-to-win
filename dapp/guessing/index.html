@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Guessing - Index</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/guessing.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="page index-page" id="page">
+        <div class="header header-fixed">
+        </div>
+        <div class="logo">
+            <div class="container">
+                <div class="h1" id="logo"><i class="fa fa-angellist"></i><span class="main-title">Bet to win</span></div>
+            </div>
+        </div>
+        <div id="ddr">
+            <div class="ddr ddr1"></div>
+            <div class="ddr ddr2"></div>
+            <div class="ddr ddr3"></div>
+            <div class="ddr ddr4"></div>
+            <div class="ddr ddr5"></div>
+            <div class="ddr ddr6"></div>
+        </div>
+        <div class="introduction">各自下注，下注多者全收。Winner takes all！</div>
+        <div class="logos">
+            <div class="fas">
+                <span class="first"><i class="fa fa-hand-grab-o"></i></span>
+                <span class="second"><i class="fa fa-hand-paper-o"></i></span>
+                <span class="three"><i class="fa fa-hand-peace-o"></i></span>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <!--<div class="text-center">Copyright © 2018 XXXXXXXXX</div> -->
+            </div>
+        </div>
+    </div>
+    <div class="loading-wrap">
+        <div id="circle"></div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/bottos-sdk-js.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/guessing.js"></script>
+    <script>
+        $(function () {
+            indexController();
+        }); 
+    </script>
+</body>
+
+</html>
