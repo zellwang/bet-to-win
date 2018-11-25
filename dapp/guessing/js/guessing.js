@@ -104,7 +104,8 @@ function registerUser(){
 					window.location.href = "guessing.html";
 				}).catch(error=>{
 					console.log({error})
-
+					//temp: goto game anyway
+					window.location.href = "guessing.html";
 				})
 
 		}
@@ -113,7 +114,9 @@ function registerUser(){
     }).catch(function(error){
         //document.getElementById('getTransaction').innerHTML = JSON.stringify(error)
 		console.log(JSON.stringify(error))
-		alert("an error occured")
+		//temp: goto game anyway
+		window.location.href = "guessing.html";
+		//alert("an error occured")
 		//return false;
     })
 }
